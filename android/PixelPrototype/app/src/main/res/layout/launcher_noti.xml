@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="64dp"
+    android:background="#f4f4f4"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/launcher_back_noti" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal">
+
+
+        <ImageButton
+            android:id="@+id/remote_option_1"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/display_filter_daily_life_button" />
+
+        <ImageButton
+            android:id="@+id/remote_option_2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/display_filter_break_button" />
+
+
+        <ImageButton
+            android:id="@+id/remote_option_3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/display_filter_sleeping_button" />
+
+        <ImageButton
+            android:id="@+id/remote_option_4"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/display_filter_stop_button" />
+
+    </LinearLayout>
+
+</LinearLayout>

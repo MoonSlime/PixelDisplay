@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    android:orientation="vertical"
+    android:weightSum="1715">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="560" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="112"
+        android:background="@drawable/logo_wellsee" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="80" />
+
+    <TextView
+        android:id="@+id/opti_textview_loading"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="150"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="813" />
+
+</LinearLayout>

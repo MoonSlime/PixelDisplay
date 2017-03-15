@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="제거"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <com.anarchy.library.DoubleSeekBar
+        android:id="@+id/seek1"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:tag="4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="일상 (10~20%)"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <com.anarchy.library.DoubleSeekBar
+        android:id="@+id/seek2"
+        android:layout_width="250dp"
+
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:tag="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="휴식 (20~40%)"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <com.anarchy.library.DoubleSeekBar
+        android:id="@+id/seek3"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:tag="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="취침 (40~60%)"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <com.anarchy.library.DoubleSeekBar
+        android:id="@+id/seek4"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:tag="3" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:weightSum="154">
+
+        <TextView
+            android:id="@+id/dialog_filter_apply"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="50"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="적용"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/dialog_filter_clear"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="50"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="해제"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_weight="2"
+            android:background="#000000" />
+
+        <TextView
+            android:id="@+id/dialog_filter_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="50"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="취소"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

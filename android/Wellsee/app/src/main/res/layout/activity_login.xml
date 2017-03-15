@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/common_background"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:weightSum="1715">
+
+    <LinearLayout
+        android:id="@+id/login_logo_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1050"
+        android:gravity="bottom|center_horizontal"
+        android:orientation="vertical"
+        android:weightSum="1080">
+
+        <ImageView
+            android:id="@+id/login_logo_wellsee"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="198"
+            android:background="@drawable/login_logo_wellsee" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="665"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:id="@+id/login_linearlayout_area"
+        android:weightSum="665">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="25" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="78"
+            android:gravity="center_vertical"
+            android:weightSum="1080">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="250" />
+
+            <ImageView
+                android:id="@+id/login_text_agree"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="196"
+                android:background="@drawable/login_imageview_agree" />
+
+            <ImageView
+                android:id="@+id/login_text_agree_dummy"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="305"
+                android:background="@drawable/login_imageview_agree_dummy" />
+
+            <CheckBox
+                android:id="@+id/login_checkbox_agree"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="6dp"
+                android:layout_weight="80"
+                android:buttonTint="#FFFFFF"
+                android:padding="0dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="249" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="85" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="118"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:weightSum="1080">
+
+            <ImageButton
+                android:id="@+id/login_imagebutton_google_login"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="744"
+                android:background="@drawable/login_imagebutton_google_login" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="359" />
+    </LinearLayout>
+</LinearLayout>

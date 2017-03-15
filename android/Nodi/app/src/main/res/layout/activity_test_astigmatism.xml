@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="1715">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="836"
+        android:background="@drawable/test_astigmatism_image" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="879"
+        android:background="@drawable/common_test_bottom_background"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="130" />
+
+        <TextView
+            android:id="@+id/test_astigmatism_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:gravity="center"
+            android:text="한 방향의 선이 비교적 더 선명해 보이나요?"
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="170" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="350"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1080">
+
+            <ImageButton
+                android:id="@+id/test_astigmatism_imagebutton_yes"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="350"
+                android:background="@drawable/test_astigmatism_imagebutton_yes" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="130" />
+
+            <ImageButton
+                android:id="@+id/test_astigmatism_imagebutton_no"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="350"
+                android:background="@drawable/test_astigmatism_imagebutton_no" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="159" />
+
+    </LinearLayout>
+
+</LinearLayout>

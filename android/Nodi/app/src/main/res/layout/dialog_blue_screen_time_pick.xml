@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1540">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="120"
+        android:gravity="center_vertical"
+        android:text="시작 시간 "
+        android:textSize="16dp" />
+
+    <TimePicker
+        android:id="@+id/blue_screen_timepicker_start"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="550"
+        android:timePickerMode="spinner" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="20dp"
+        android:layout_weight="120"
+        android:gravity="center_vertical"
+        android:text="종료 시간 "
+        android:textSize="16dp" />
+
+    <TimePicker
+        android:id="@+id/blue_screen_timepicker_end"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="550"
+        android:timePickerMode="spinner" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160"
+        android:background="#5ec2ba"
+        android:orientation="horizontal"
+        android:weightSum="320">
+
+        <TextView
+            android:id="@+id/blue_screen_textview_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="160"
+            android:gravity="center"
+            android:text="확인"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/blue_screen_textview_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="160"
+            android:gravity="center"
+            android:text="취소"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+    </LinearLayout>
+
+</LinearLayout>

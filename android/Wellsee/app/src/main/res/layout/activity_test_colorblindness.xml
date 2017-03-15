@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="1715">
+
+    <ImageView
+        android:id="@+id/test_colorblind_imageview"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="836" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="879"
+        android:background="@drawable/common_test_bottom_background"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="130" />
+
+        <TextView
+            android:id="@+id/test_astigmatism_text"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="70"
+            android:gravity="center"
+            android:text="그림 안에 보이는 숫자를 입력해 주세요."
+            android:textColor="@color/white"
+            android:textSize="17dp" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="60" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="150"
+            android:gravity="center"
+            android:weightSum="1080">
+
+            <LinearLayout
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_width="0px"
+                android:layout_height="0px"/>
+
+            <EditText
+                android:id="@+id/test_colorblind_edittext"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="735"
+                android:inputType = "number"
+                android:hint="숫자"
+                android:textColorHint="#bfeaff"
+                android:gravity="center"
+                android:textColor="@color/white" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="110"
+            android:weightSum="1080">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="180" />
+
+            <ImageButton
+                android:id="@+id/test_colorblind_button_see"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="325"
+                android:background="@drawable/test_colorblind_button_see"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="입력"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="70" />
+
+            <ImageButton
+                android:id="@+id/test_colorblind_button_notsee"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="325"
+                android:background="@drawable/test_colorblind_button_notsee"
+                android:minHeight="0dp"
+                android:minWidth="0dp"
+                android:text="안 보인다"
+                android:textColor="@color/white"
+                android:textSize="14dp" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="180" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="279" />
+    </LinearLayout>
+</LinearLayout>

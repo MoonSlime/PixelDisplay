@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#5151c2"
+        android:gravity="center_vertical"
+        android:paddingLeft="30dp"
+        android:text="밝기 조절"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <io.feeeei.circleseekbar.CircleSeekBar
+        android:id="@+id/dialog_bright_seekbar"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginTop="15dp"
+        app:wheel_max_process="255"
+        app:wheel_scroll_only_one_circle="true" />
+
+    <TextView
+        android:id="@+id/dialog_bright_progress"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginRight="30dp"
+        android:gravity="center_vertical|right"
+        android:text=""
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:background="#000000" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="43dp"
+        android:orientation="horizontal"
+        android:weightSum="101">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="50"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="적용"
+            android:id="@+id/dialog_bright_apply"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:layout_marginBottom="10dp"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1"
+            android:background="#000000" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="3dp"
+            android:layout_weight="50"
+            android:id="@+id/dialog_briight_cancel"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="취소"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

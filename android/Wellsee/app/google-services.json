@@ -1,0 +1,67 @@
+{
+  "project_info": {
+    "project_number": "647342702808",
+    "project_id": "firebase-wellsee"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647342702808:android:81a3550679d04781",
+        "android_client_info": {
+          "package_name": "com.pixeldp.nodi"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAe1IouQYDxdcRG0HR5uHfBvdPmAyZAF8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-93218147-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:647342702808:android:a4bfd98211c0415f",
+        "android_client_info": {
+          "package_name": "com.pixeldp.wellsee"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAAe1IouQYDxdcRG0HR5uHfBvdPmAyZAF8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-93218147-1"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

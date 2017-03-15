@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pixeldp.launcher">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+    <uses-feature android:name="android.hardware.camera.front" />
+    <uses-feature android:name="android.hardware.camera.front.autofocus" />
+    <uses-feature android:name="android.hardware.camera.flash" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
+    <application
+        android:clearTaskOnLaunch="true"
+        android:icon="@mipmap/pixel_main"
+        android:label="@string/app_name"
+        android:launchMode="singleTask"
+        android:stateNotNeeded="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name="com.pixeldp.prototype.IntroActivity"
+            android:icon="@mipmap/pixel_settng_icon"
+            android:label="@string/app_setting"
+            android:taskAffinity="com.pixeldp.pixeldisplay"
+            android:theme="@style/NoActionBarTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pixeldp.prototype.JoinActivity" />
+        <activity
+            android:name="com.pixeldp.prototype.LoginActivity"
+            android:theme="@style/NoActionBarTheme" />
+        <activity android:name="com.pixeldp.launcher.setting.SettingActivity" />
+        <activity
+            android:name="com.pixeldp.launcher.screen.HomeScreen"
+            android:excludeFromRecents="true"
+            android:icon="@mipmap/pixel_launcher_icon"
+            android:label="@string/app_launcher"
+            android:launchMode="singleTask"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+                <category android:name="android.intent.category.HOME" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.pixeldp.prototype.MainActivity" />
+        <activity
+            android:name="com.pixeldp.prototype.FindingPupilActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
+        <activity android:name="com.pixeldp.prototype.AnalyzingCrescentActivity" />
+        <activity android:name="com.pixeldp.prototype.RaspberryPiActivity" />
+
+        <service
+            android:name="com.pixeldp.launcher.setting.FilterService"
+            android:enabled="true" />
+
+        <activity android:name="com.pixeldp.prototype.TestActivity" />
+    </application>
+
+</manifest>

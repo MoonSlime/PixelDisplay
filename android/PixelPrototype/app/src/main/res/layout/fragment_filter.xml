@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="제거"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <com.anarchy.library.DoubleSeekBar
+        android:id="@+id/fragment_filter_seek1"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:tag="4" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="일상 (10~20%)"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <com.anarchy.library.DoubleSeekBar
+        android:id="@+id/fragment_filter_seek2"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:tag="1" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="휴식 (20~40%)"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <com.anarchy.library.DoubleSeekBar
+        android:id="@+id/fragment_filter_seek3"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:tag="2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="취침 (40~60%)"
+        android:textColor="#000000"
+        android:textSize="17dp" />
+
+    <com.anarchy.library.DoubleSeekBar
+        android:id="@+id/fragment_filter_seek4"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingLeft="2dp"
+        android:paddingRight="2dp"
+        android:tag="3" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:weightSum="102">
+
+            <TextView
+                android:id="@+id/fragment_filter_apply"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_weight="50"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="적용"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_weight="2"
+                android:background="#000000" />
+
+            <TextView
+                android:id="@+id/fragment_filter_clear"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginTop="3dp"
+                android:layout_weight="50"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="해제"
+                android:textColor="#000000"
+                android:textSize="24sp" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

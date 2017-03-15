@@ -1,0 +1,77 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- <item name="colorPrimary">@color/colorPrimary</item> -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:actionBarSize">45dp</item>
+        <item name="actionBarSize">45dp</item>
+        <item name="actionBarStyle">@style/CommonActionBarBackground</item>
+        <item name="android:actionBarStyle">@style/CommonActionBarBackground</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="ScreenTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- <item name="colorPrimary">@color/colorPrimary</item> -->
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#009688</item>
+        <item name="android:actionBarSize">45dp</item>
+        <item name="actionBarSize">45dp</item>
+        <item name="actionBarStyle">@style/CommonActionBarBackground</item>
+        <item name="android:actionBarStyle">@style/CommonActionBarBackground</item>
+    </style>
+
+    <style name="MainTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:actionBarSize">45dp</item>
+        <item name="actionBarSize">45dp</item>
+        <item name="actionBarStyle">@style/MainActionBarBackground</item>
+        <item name="android:actionBarStyle">@style/MainActionBarBackground</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="RecordTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+        <item name="android:actionBarSize">45dp</item>
+        <item name="actionBarSize">45dp</item>
+        <item name="actionBarStyle">@style/RecordActionBarBackground</item>
+        <item name="android:actionBarStyle">@style/RecordActionBarBackground</item>
+        <item name="colorControlNormal">@color/white</item>
+        <item name="colorControlActivated">@color/white</item>
+    </style>
+
+    <style name="NoActionBarTheme" parent="@style/Theme.AppCompat.NoActionBar">
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/white</item>
+    </style>
+
+    <style name="CommonActionBarBackground" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/common_actionbar_background</item>
+        <item name="background">@drawable/common_actionbar_background</item>
+    </style>
+
+    <style name="MainActionBarBackground" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/main_actionbar_background</item>
+        <item name="background">@drawable/main_actionbar_background</item>
+    </style>
+
+    <style name="RecordActionBarBackground" parent="@style/Widget.AppCompat.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@drawable/record_actionbar_background</item>
+        <item name="background">@drawable/record_actionbar_background</item>
+    </style>
+
+    <style name="SwitchStyle" parent="Theme.AppCompat.Light">
+        <item name="colorControlActivated">#216F8B</item>
+        <item name="colorSwitchThumbNormal">#ffffff</item>
+        <item name="android:colorForeground">#ffffff</item>
+    </style>
+
+    <style name="SeekBarStyle" parent="Widget.AppCompat.SeekBar">
+        <item name="colorAccent">#FFFFFF</item>
+    </style>
+</resources>

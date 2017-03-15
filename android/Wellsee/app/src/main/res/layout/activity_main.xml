@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1715">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="760"
+            android:background="@drawable/main_background"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal"
+            android:weightSum="1080">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="750"
+                android:orientation="vertical"
+                android:weightSum="760">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="43" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="540">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:weightSum="760">
+
+                        <com.pixeldp.view.widgets.HoloCircleSeekBar
+                            android:id="@+id/main_seekbar_opti_result"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="540"
+                            app:background_color="#A4DDF7"
+                            app:background_size="38"
+                            app:max="100"
+                            app:pointer_color="#FFFFFF"
+                            app:pointer_halo_color="#FFFFFF"
+                            app:pointer_size="10dp"
+                            app:show_background="true"
+                            app:show_text="false"
+                            app:wheel_active_color="#FFFFFF"
+                            app:wheel_size="20"
+                            app:wheel_unactive_color="#A4DDF7" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:weightSum="760">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="280" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="200"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:id="@+id/main_textview_opti_result_value"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom"
+                                android:includeFontPadding="false"
+                                android:text="7"
+                                android:textColor="#ffffd7"
+                                android:textSize="45dp" />
+
+                            <TextView
+                                android:id="@+id/main_textview_opti_step"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:gravity="bottom"
+                                android:includeFontPadding="false"
+                                android:text="단계"
+                                android:textColor="@color/white"
+                                android:textSize="22dp" />
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/main_textview_opti_result"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="140"
+                            android:gravity="center"
+                            android:text="보통"
+                            android:textColor="@color/white"
+                            android:textSize="16dp" />
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="280" />
+
+                    </LinearLayout>
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/main_textview_opti"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="117"
+                    android:gravity="center"
+                    android:text="화면 최적화용 눈 검사 결과"
+                    android:textColor="#FFFFFF"
+                    android:textSize="13dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="60" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="245"
+                android:orientation="vertical"
+                android:weightSum="760">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="59" />
+
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="225">
+
+                    <com.pixeldp.view.widgets.HoloCircleSeekBar
+                        android:id="@+id/main_seekbar_astigmatism_probability"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        app:background_color="#00FFFFFF"
+                        app:max="100"
+                        app:pointer_color="#00FFFFFF"
+                        app:pointer_halo_color="#00FFFFFF"
+                        app:show_background="false"
+                        app:show_text="false"
+                        app:wheel_active_color="#FFFFFF"
+                        app:wheel_unactive_color="#7FFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/main_textview_astigmatism_probability"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="높음"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="18" />
+
+                <TextView
+                    android:id="@+id/main_textview_astigmatism"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="45"
+                    android:gravity="center_horizontal"
+                    android:text="난시 가능성"
+                    android:textColor="@color/white"
+                    android:textSize="11dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="40" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="225">
+
+                    <com.pixeldp.view.widgets.HoloCircleSeekBar
+                        android:id="@+id/main_seekbar_colorblind_probability"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_centerInParent="true"
+                        app:background_color="#00FFFFFF"
+                        app:max="100"
+                        app:pointer_color="#00FFFFFF"
+                        app:pointer_halo_color="#00FFFFFF"
+                        app:show_background="false"
+                        app:show_text="false"
+                        app:wheel_active_color="#FFFFFF"
+                        app:wheel_unactive_color="#7FFFFFFF" />
+
+                    <TextView
+                        android:id="@+id/main_textview_colorblind_probability"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:text="낮음"
+                        android:textColor="@color/white"
+                        android:textSize="14dp" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="18" />
+
+                <TextView
+                    android:id="@+id/main_textview_colorblind"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="45"
+                    android:gravity="center_horizontal"
+                    android:text="색맹/색약 가능성"
+                    android:textColor="@color/white"
+                    android:textSize="11dp" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="85" />
+            </LinearLayout>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="85" />
+
+        </LinearLayout>
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="880" />
+
+        <LinearLayout
+            android:id="@+id/pager_indicator"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="75"
+            android:background="@color/MAIN_TAIL_COLOR"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

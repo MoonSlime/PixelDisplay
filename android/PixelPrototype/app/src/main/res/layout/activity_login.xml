@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/activity_intro_back"
+    android:orientation="vertical">
+
+    <EditText
+        android:id="@+id/login_textview_email"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="400dp"
+        android:background="#FFFFFF"
+        android:hint="이메일 주소"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textSize="14dp" />
+
+    <EditText
+        android:id="@+id/login_textview_password"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="#FFFFFF"
+        android:hint="비밀번호"
+        android:inputType="numberPassword"
+        android:maxLines="1"
+        android:paddingLeft="10dp"
+        android:textSize="14dp" />
+
+
+    <ImageButton
+        android:id="@+id/login_imagebutton_login"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/activity_intro_login" />
+
+    <LinearLayout
+        android:layout_width="117dp"
+        android:layout_height="83dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical">
+
+        <ImageButton
+            android:id="@+id/login_imagebutton_join"
+            android:layout_width="125dp"
+            android:layout_height="40dp"
+            android:background="@drawable/activity_intro_join" />
+    </LinearLayout>
+</LinearLayout>

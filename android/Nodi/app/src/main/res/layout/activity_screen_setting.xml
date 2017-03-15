@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/common_background"
+        android:clickable="true"
+        android:orientation="vertical"
+        android:weightSum="1715">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_weight="720">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1080">
+
+                <ImageView
+                    android:id="@+id/opti_detailsetting_preview"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="980"
+                    android:background="@drawable/screen_preview_1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="1080">
+
+                <RelativeLayout
+                    android:id="@+id/opti_detailsetting_filter"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="980" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="40" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#A9D9F4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1080">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="980"
+                android:text="텍스트 크기"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="115"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1080">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="110"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="110">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="27"
+                    android:background="@drawable/screen_adjust_font_left_icon" />
+            </LinearLayout>
+
+            <SeekBar
+                android:id="@+id/screen_adjust_seekbar_fontsize"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="760"
+                android:max="9"
+                android:progressTint="@color/white"
+                android:theme="@style/SeekBarStyle" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="110"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="110">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="50"
+                    android:background="@drawable/screen_adjust_font_right_icon" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#A9D9F4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="80"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1080">
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="5dp"
+                android:layout_weight="310"
+                android:text="블루 라이트"
+
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <Switch
+                android:id="@+id/screen_adjust_switch_bl"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="140"
+                android:theme="@style/SwitchStyle" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="40" />
+
+
+            <ImageButton
+                android:id="@+id/screen_adjust_imagebutton_bltime"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="60"
+                android:background="@drawable/screen_adjust_image_clock" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="430" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="30" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="115"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:weightSum="1080">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="110"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="110">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="56"
+                    android:background="@drawable/screen_adjust_bright_left_icon" />
+            </LinearLayout>
+
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="10" />
+
+            <SeekBar
+                android:id="@+id/screen_adjust_seekbar_filter"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="760"
+                android:theme="@style/SeekBarStyle" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="110"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="110">
+
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="56"
+                    android:background="@drawable/screen_adjust_bright_right_icon" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:background="#A9D9F4" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="49" />
+
+        <ImageButton
+            android:id="@+id/screen_adjust_imagebutton_ok"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="140"
+            android:background="@drawable/screen_adjust_ok"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/screen_setting_test"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></RelativeLayout>
+</RelativeLayout>

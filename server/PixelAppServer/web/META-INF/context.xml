@@ -1,0 +1,9 @@
+<?xml version='1.0' encoding='utf-8'?>
+<Context>
+    <WatchedResource>WEB-INF/web.xml</WatchedResource>
+
+    <ResourceLink type="javax.sql.DataSource"
+                  name="jdbc/pixeldisplay"
+                  global="jdbc/pixeldisplay"/>
+
+</Context>

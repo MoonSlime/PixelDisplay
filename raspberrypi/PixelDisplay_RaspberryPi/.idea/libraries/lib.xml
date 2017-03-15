@@ -1,0 +1,15 @@
+<component name="libraryTable">
+  <library name="lib">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/bluecove-gpl-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/pi4j-core.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jrpicam-1.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/gson-2.7.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/bluecove-2.1.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/google-http-client-1.22.0.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/google-http-client-gson-1.22.0.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1715"
+    android:background="@drawable/common_background"
+    android:clickable="true"
+    android:orientation="vertical">
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="360" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="150">
+
+        <TextView
+            android:id="@+id/opti_inform_textview_1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="최근 진단한 시력 데이터를 바탕으로\n최적화 하시겠습니까?"
+            android:textColor="@color/white"
+            android:textSize="16dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="260" />
+
+    <LinearLayout
+        android:id="@+id/opti_choice_layout_again"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="450"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1080">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="68" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="450">
+
+            <ImageButton
+                android:id="@+id/opti_inform_imagebutton_imm"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/opti_inform_imagebutton_imm" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="44" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="450">
+
+            <ImageButton
+                android:id="@+id/opti_inform_imagebutton_retest"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/opti_inform_imagebutton_retest" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="68" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="495" />
+
+</LinearLayout>

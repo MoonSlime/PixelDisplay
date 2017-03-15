@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/dialog_result_root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DIALOG_RESULT_BACKGROUND"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:weightSum="1090">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="870"
+        android:orientation="vertical"
+        android:weightSum="870">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:orientation="horizontal"
+            android:weightSum="820">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="277"
+                android:gravity="center"
+                android:text="나이"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <EditText
+                android:id="@+id/test_editText_age"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="450"
+                android:background="#acdfef"
+                android:ems="10"
+                android:inputType="number" />
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:orientation="horizontal"
+            android:weightSum="820">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="277"
+                android:gravity="center"
+                android:text="성별"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <Spinner
+                android:id="@+id/spinner_sex"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="450"
+                android:background="#acdfef"
+                android:entries="@array/sex_entries"
+                android:maxLines="1" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:orientation="horizontal"
+            android:weightSum="820">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="277"
+                android:gravity="center"
+                android:text="난시"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/test_radiogroup_astigmatism"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="450"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/test_buttongroup_astigmatism_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_group"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/have"
+                    android:textColor="@drawable/button_group_text" />
+
+                <RadioButton
+                    android:id="@+id/test_buttongroup_astigmatism_no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_group"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/dont_have"
+                    android:textColor="@drawable/button_group_text" />
+
+                <RadioButton
+                    android:id="@+id/test_buttongroup_astigmatism_dontknow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_group"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/dont_know"
+                    android:textColor="@drawable/button_group_text" />
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="100"
+            android:orientation="horizontal"
+            android:weightSum="820">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="277"
+                android:gravity="center"
+                android:text="색맹"
+                android:textColor="@color/white"
+                android:textSize="16dp" />
+
+            <RadioGroup
+                android:id="@+id/test_radiogroup_colorblindness"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="450"
+                android:orientation="horizontal"
+                android:weightSum="3">
+
+                <RadioButton
+                    android:id="@+id/test_buttongroup_colorblindness_yes"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_group"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/have"
+                    android:textColor="@drawable/button_group_text" />
+
+                <RadioButton
+                    android:id="@+id/test_buttongroup_colorblindness_no"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_group"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/dont_have"
+                    android:textColor="@drawable/button_group_text" />
+
+                <RadioButton
+                    android:id="@+id/test_buttongroup_colorblindness_dontknow"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/button_group"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="@string/dont_know"
+                    android:textColor="@drawable/button_group_text" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="90" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="220"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:weightSum="820">
+            <ImageButton
+                android:id="@+id/test_imagebutton_confirm"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="533"
+                android:background="@drawable/test_imagebutton_confirm" />
+    </LinearLayout>
+</LinearLayout>

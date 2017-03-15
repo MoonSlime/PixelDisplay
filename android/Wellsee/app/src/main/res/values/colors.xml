@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#A7A7A7</color>
+    <color name="colorPrimaryDark">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="white">#FFFFFF</color>
+    <color name="TEST_RESULT_TEXT">#E5E5E5</color>
+    <color name="TEST_RESULT_TILE">#ECECEC</color>
+    <color name="RECORD_LISTVIEW_ITEM">#8C8C8C</color>
+    <color name="MAIN_TAIL_COLOR">#3587BA</color>
+    <color name="DIALOG_RESULT_BACKGROUND">#58bede</color>
+    <color name="SEEKBAR_DEFAULT_COLOR">#649DC2</color>
+    <color name="SEEKBAR_HIGHTLIGHT_COLOR">#A8F2E6</color>
+    <color name="SEEKBAR_THUMB_COLOR">#FFFFFF</color>
+</resources>

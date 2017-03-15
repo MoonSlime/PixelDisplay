@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:background="@color/white"
+    android:orientation="horizontal"
+    android:weightSum="1080">
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="56" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="70"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/record_clock_icon" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="35" />
+
+    <TextView
+        android:id="@+id/record_item_date"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_weight="200"
+        android:gravity="center"
+        android:text="17.02.09"
+        android:textColor="#79b5cc"
+        android:textSize="17dp" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="417" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="124"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="211">
+
+        <TextView
+            android:id="@+id/record_item_level"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="47"
+            android:background="#79b5cc"
+            android:gravity="center"
+            android:text="9단계"
+            android:textColor="@color/white"
+            android:textSize="10dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/record_item_remove"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="178"
+        android:gravity="center">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/record_imgbtn_menu" />
+    </LinearLayout>
+
+</LinearLayout>

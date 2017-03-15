@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_weight="1715"
+    android:background="@drawable/common_background"
+    android:clickable="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="190" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="750"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        android:weightSum="1080">
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="350" />
+
+        <ImageView
+
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="625"
+            android:background="@drawable/opti_explain_image" />
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="105" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="160" />
+
+
+    <TextView
+        android:id="@+id/opti_explain_textview_1"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="150"
+        android:text="화면 최적화는 검사한 눈 정보를 바탕으로\n내 눈에 가장 편한 화면을 만들어줍니다."
+        android:textColor="@color/white"
+        android:textSize="16dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="150" />
+
+    <ImageView
+        android:id="@+id/opti_explain_imagebutton_next"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_weight="110"
+        android:background="@drawable/common_imagebutton_next" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="205" />
+</LinearLayout>
