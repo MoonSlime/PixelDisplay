@@ -10,7 +10,7 @@ import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
 
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 import com.pixeldp.util.PreferenceUtil;
 
 import butterknife.Bind;

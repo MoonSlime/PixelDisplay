@@ -24,7 +24,7 @@ import com.pixeldp.http.PixelAPI;
 import com.pixeldp.http.PixelService;
 import com.pixeldp.model.EyeModel;
 import com.pixeldp.prototype.MainActivity;
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 import com.pixeldp.prototype.IntroActivity;
 import com.pixeldp.util.PreferenceUtil;
 

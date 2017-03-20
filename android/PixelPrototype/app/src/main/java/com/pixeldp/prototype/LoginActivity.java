@@ -13,7 +13,7 @@ import android.widget.Toast;
 import com.pixeldp.http.PixelAPI;
 import com.pixeldp.http.PixelService;
 import com.pixeldp.model.UserModel;
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 import com.pixeldp.launcher.setting.SettingActivity;
 import com.pixeldp.util.GsonUtil;
 

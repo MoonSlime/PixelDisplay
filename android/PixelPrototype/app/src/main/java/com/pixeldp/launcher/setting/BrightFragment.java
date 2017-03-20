@@ -10,7 +10,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

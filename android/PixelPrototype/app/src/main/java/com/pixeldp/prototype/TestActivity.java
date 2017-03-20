@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 import com.pixeldp.prototype.device_control.CameraControl;
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;

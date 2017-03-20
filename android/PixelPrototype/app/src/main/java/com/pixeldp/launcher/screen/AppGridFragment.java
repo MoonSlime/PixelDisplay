@@ -17,7 +17,7 @@ import android.widget.AdapterView;
 import android.widget.GridView;
 
 import com.pixeldp.model.AppModel;
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 import com.pixeldp.util.PreferenceUtil;
 
 import java.util.ArrayList;

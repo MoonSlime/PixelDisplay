@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.pixeldp.launcher">
+    package="com.pixeldp.prototype">
 
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
@@ -29,19 +29,20 @@
         android:stateNotNeeded="true"
         android:theme="@style/AppTheme">
         <activity
-            android:name="com.pixeldp.prototype.IntroActivity"
+            android:name=".IntroActivity"
             android:icon="@mipmap/pixel_settng_icon"
             android:label="@string/app_setting"
             android:taskAffinity="com.pixeldp.pixeldisplay"
             android:theme="@style/NoActionBarTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.pixeldp.prototype.JoinActivity" />
+        <activity android:name=".JoinActivity" />
         <activity
-            android:name="com.pixeldp.prototype.LoginActivity"
+            android:name=".LoginActivity"
             android:theme="@style/NoActionBarTheme" />
         <activity android:name="com.pixeldp.launcher.setting.SettingActivity" />
         <activity
@@ -59,18 +60,20 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
-        <activity android:name="com.pixeldp.prototype.MainActivity" />
+        <activity android:name=".MainActivity" />
         <activity
-            android:name="com.pixeldp.prototype.FindingPupilActivity"
+            android:name=".FindingPupilActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen" />
-        <activity android:name="com.pixeldp.prototype.AnalyzingCrescentActivity" />
-        <activity android:name="com.pixeldp.prototype.RaspberryPiActivity" />
+        <activity android:name=".AnalyzingCrescentActivity" />
+        <activity android:name=".RaspberryPiActivity" />
 
         <service
             android:name="com.pixeldp.launcher.setting.FilterService"
             android:enabled="true" />
 
-        <activity android:name="com.pixeldp.prototype.TestActivity" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".Test_FindingPupilActivity" />
+        <activity android:name=".Test_AnalyzingCrescentActivity" />
     </application>
 
 </manifest>

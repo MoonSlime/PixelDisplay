@@ -15,7 +15,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import com.pixeldp.model.AppModel;
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 
 import java.util.ArrayList;
 import java.util.Collection;

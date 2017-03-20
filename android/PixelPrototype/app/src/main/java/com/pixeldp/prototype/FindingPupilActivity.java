@@ -24,12 +24,13 @@ import android.widget.Toast;
 
 import com.pixeldp.prototype.device_control.BluetoothControl;
 import com.pixeldp.util.ImageUtil;
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 
 import org.opencv.core.Rect;
 
 import butterknife.Bind;
 import butterknife.ButterKnife;
+import butterknife.OnClick;
 
 public class FindingPupilActivity extends Activity {
     @Bind(R.id.imageView_findingPupil)
@@ -75,7 +76,8 @@ public class FindingPupilActivity extends Activity {
         imageView_findingPupil.setDrawing(true);
     }
 
-    public void button_designation(View v) {
+    @OnClick(R.id.button_designation)
+    public void onClickButtonDesignation() {
         imageView_findingPupil.setDrawing(false);
 
         float[] values = new float[9];
@@ -98,7 +100,7 @@ public class FindingPupilActivity extends Activity {
         Rect pupilRect = new Rect(drawingCache.getWidth()/2 - 100, drawingCache.getHeight()/2 -100 , 200, 200);
         Bitmap pupilBitmap = Bitmap.createBitmap(drawingCache, pupilRect.x, pupilRect.y, pupilRect.width, pupilRect.height);
 
-        Intent intent = new Intent(FindingPupilActivity.this, AnalyzingCrescentActivity.class);
+        Intent intent = new Intent(getApplicationContext(), AnalyzingCrescentActivity.class);
         intent.putExtra("pupilBitmap", pupilBitmap);
         intent.putExtra("pupilDiameter", pupilDiameter);
         intent.putExtra("eye_camera_distance", eye_camera_distance);
@@ -158,7 +160,7 @@ public class FindingPupilActivity extends Activity {
             bluetoothControl.setReceivingImage(false);
 
             if ( bitmap == null ) {
-                Toast.makeText(FindingPupilActivity.this, "기기와 연결되어 있지 않습니다.", Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "기기와 연결되어 있지 않습니다.", Toast.LENGTH_SHORT).show();
                 finish();
                 return;
             }

@@ -17,7 +17,7 @@ import android.view.View;
 import android.view.WindowManager;
 
 import com.pixeldp.prototype.MainActivity;
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 
 public class FilterService extends Service {
     private WindowManager winManager;

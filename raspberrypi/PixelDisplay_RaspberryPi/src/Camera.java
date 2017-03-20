@@ -8,7 +8,7 @@ import java.util.*;
 class Camera {
     static final String picturePath = "/home/pi/Desktop/face.jpg";
     static final Size maxSize = new Size(2592, 1944);
-    static final Size selectedSize = new Size(1296, 972);
+    static final Size selectedSize = new Size(1944, 1458);
     private HashMap<String, String[]> options;
     private static Camera instance;
 

@@ -14,7 +14,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.anarchy.library.DoubleSeekBar;
-import com.pixeldp.launcher.R;
+import com.pixeldp.prototype.R;
 
 import java.util.ArrayList;
 import java.util.Arrays;
