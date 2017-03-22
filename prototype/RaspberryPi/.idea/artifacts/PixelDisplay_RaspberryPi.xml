@@ -1,0 +1,15 @@
+<component name="ArtifactManager">
+  <artifact name="PixelDisplay_RaspberryPi">
+    <output-path>$USER_HOME$/바탕화면</output-path>
+    <root id="root">
+      <element id="archive" name="PixelDisplay_RaspberryPi.jar">
+        <element id="module-output" name="RaspberryPi" />
+      </element>
+      <element id="library" level="project" name="bluecove-2.1.0" />
+      <element id="library" level="project" name="gson-2.7" />
+      <element id="library" level="project" name="jrpicam-1.1.0" />
+      <element id="library" level="project" name="pi4j-core" />
+      <element id="library" level="project" name="google-http-client-1.22.0" />
+    </root>
+  </artifact>
+</component>

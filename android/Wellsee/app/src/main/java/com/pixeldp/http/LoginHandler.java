@@ -1,6 +1,7 @@
 package com.pixeldp.http;
 
 import android.app.Activity;
+import android.util.Log;
 
 import com.pixeldp.model.ResponseModel;
 import com.pixeldp.util.PreferenceUtil;

@@ -1,18 +1,18 @@
 <component name="ArtifactManager">
   <artifact type="war" name="www">
-    <output-path>$USER_HOME$/Desktop</output-path>
+    <output-path>$USER_HOME$/바탕화면</output-path>
     <root id="archive" name="www.war">
-      <element id="javaee-facet-resources" facet="PixelAppServer/web/Web" />
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="PixelAppServer" />
         </element>
         <element id="directory" name="lib">
           <element id="library" level="project" name="apache-commons" />
-          <element id="library" level="project" name="JAX-WS-Apache Axis" />
           <element id="library" level="project" name="gson-2.8.0" />
+          <element id="library" level="project" name="libs" />
         </element>
       </element>
+      <element id="javaee-facet-resources" facet="PixelAppServer/web/Web" />
     </root>
   </artifact>
 </component>

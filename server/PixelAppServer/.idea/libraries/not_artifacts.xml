@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="not-artifacts">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/tomcat-dbcp.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/tomcat-jdbc.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/servlet-api.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jsp-api.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

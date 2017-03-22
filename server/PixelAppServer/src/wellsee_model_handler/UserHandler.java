@@ -28,11 +28,11 @@ public class UserHandler {
             return new ResponseModel(201, "There is no affected rows num.");
         }
 
-        Integer userNum = (Integer) db.value(
+        Integer userNum = ((Long) db.value(
                 "SELECT * FROM WELLSEE_USER WHERE accountName=?",
                 "userNum",
                 accountName
-        );
+        )).intValue();
 
         UserModel userModel = new UserModel(200, "success", userNum, accountName);
         session.setAttribute("userModel", userModel);

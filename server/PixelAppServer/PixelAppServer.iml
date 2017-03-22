@@ -10,9 +10,6 @@
           <root url="file://$MODULE_DIR$/web" relative="/" />
         </webroots>
       </configuration>
-      <facet type="webservices" name="WebServices">
-        <configuration ws.engine="Apache Axis" />
-      </facet>
     </facet>
   </component>
   <component name="NewModuleRootManager" inherit-compiler-output="true">
@@ -26,8 +23,10 @@
     <orderEntry type="library" name="apache-commons" level="project" />
     <orderEntry type="library" name="servlet-api" level="project" />
     <orderEntry type="library" name="gson-2.8.0" level="project" />
-    <orderEntry type="library" name="tomcat-dbcp" level="project" />
     <orderEntry type="library" name="tomcat-jdbc" level="project" />
     <orderEntry type="library" name="jsp-api" level="project" />
+    <orderEntry type="library" name="apache-commons" level="project" />
+    <orderEntry type="library" name="libs" level="project" />
+    <orderEntry type="library" name="not-artifacts" level="project" />
   </component>
 </module>

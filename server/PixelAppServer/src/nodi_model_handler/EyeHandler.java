@@ -73,7 +73,7 @@ public class EyeHandler {
 
         ArrayList<EyeModel> eyeModels = new ArrayList<>();
         for (Map<String, Object> eyeInfo : result) {
-            int id = (Integer) eyeInfo.get("id");
+            int id = ((Long) eyeInfo.get("id")).intValue();
             int userNum = ((Long) eyeInfo.get("userNum")).intValue();
             float level_visualAcuity = (Float) eyeInfo.get("level_visualAcuity");
             int level_astigmatism = (Integer) eyeInfo.get("level_astigmatism");
@@ -100,7 +100,7 @@ public class EyeHandler {
 
         Map<String, Object> eyeInfo = result.get(0);
 
-        int id = (Integer) eyeInfo.get("id");
+        int id = ((Long) eyeInfo.get("id")).intValue();
         int userNum = ((Long) eyeInfo.get("userNum")).intValue();
         float level_visualAcuity = (Float) eyeInfo.get("level_visualAcuity");
         int level_astigmatism = (Integer) eyeInfo.get("level_astigmatism");
