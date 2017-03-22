@@ -1,6 +1,0 @@
-Manifest-Version: 1.0
-Class-Path: jrpicam-1.1.0.jar pi4j-core.jar bluecove-2.1.0.jar bluecov
- e-gpl-2.1.0.jar gson-2.7.jar google-http-client-1.22.0.jar google-htt
- p-client-gson-1.22.0.jar
-Main-Class: Main
-
